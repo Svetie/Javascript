@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <div id="dojonary">Dojonary</div>
+            <input placeholder="Search" type="text">
+            <button onclick="logout(this)" id="login">Login</button>
+        </div>
+    </nav>
+
+    <div id="site">
+        <div id="left">
+            <div class="ninja">
+                <div class="leftNinja">
+                    <h1 class="center">ninja</h1>
+                    <p class="center" class="noun"><span>noun</span></p>
+                    <p class="center" class="plural" >Plural: <span>ninjas</span></p>
+                    <button onclick="alert('Ninja was liked')" class="likes">13 likes</button>
+                </div>
+                <div class="rightNinja">
+                    <p class="definition">
+                        A practitioner skilled in the 
+                        <span class="blue">Japanese</span> art of
+                        <span class="blue">ninjutsu</span>
+                    </p>
+                </div>
+            </div>
+            <div class="ninja">
+                <div class="leftNinja">
+                    <h1 class="center">ninja</h1>
+                    <p class="center" class="noun" ><span>noun</span></p>
+                    <p class="center" class="plural">Plural: <span>ninjas</span></p>
+                    <button onclick="alert('Ninja was liked')"  class="likes">37 likes</button>
+                </div>
+                <div class="rightNinja">
+                    <p class="definition">
+                        A <span class="blue">programmer</span>
+                        who breaks down problems with 
+                        <span class="blue">zen</span>-like focus
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <p id="you">Dojonary is defined by YOU</p>
+            <button onclick="remove(this)" id="add">Add Definintion</button>
+        </div>
+    </div>
+    <script src="buttons.js"></script>
+</body>
+</html>
