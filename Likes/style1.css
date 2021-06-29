@@ -1,0 +1,46 @@
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#nav {
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 175%;
+    padding-left: 2%;
+}
+
+#header {
+    width: 80%;
+    text-align: center;
+}
+
+#main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#left {
+    width: 30%;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#doe {
+    height: 40%;
+    width: 40%;
+}
+
+#right {
+    width: 65%;
+}
