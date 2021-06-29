@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleRightBottom.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top">
+            <div id="nav">
+                <h1 class="nav-title">Profile</h1>
+                <ul class="nav-links">
+                    <li><a href="#" class="visitedWhite">Home</a></li>
+                    <li><a href="#" class="visitedWhite">My Profile</a></li>
+                    <li><a href="#" class="visitedWhite">Find Connections</a></li>
+                </ul>
+                <div id="button"><button class="btn">Sign Out</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div id="left">
+                <div id="idCard">
+                    <div id="stripe"><img src="images/user-circle.png" alt="user-circle" id="user"></div>
+                    <h1 id="jane">Jane Doe</h1>
+                    <div id="location">
+                        <img src="images/map-marker.png" alt="map marker" id="map">
+                        <div id="seattle">Seattle</div>
+                    </div>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet</p>
+                    <button onclick="changeName()" id="edit">
+                        <img src="images/gear.png" alt="gear" id="gear">
+                        edit profile
+                    </button>
+                </div>
+                <div id="education">
+                    <div id="educationHeader" class="header">
+                        <p id="pEdu">Education</p></div>
+                    <div id="educationInfo">
+                        <p id="dojo" class="comic">Coding Dojo - Full Stack Bootcamp</p>
+                        <p id="date" class="comic">Dec 2019-Mr2020</p>
+                        <p id="belt" class="comic">Triple black belt in Python, MERN and C#</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="requests">
+                    <div id="requestsHeader" class="header">
+                        <div id="two"><div id="num2">2</div></div>
+                        <div>Connection Requests</div>
+                    </div>
+                    <div id="requestsList">
+                        <div id="todd" onmouseover="changeCursor(this)" class="names" >
+                            <img src="images/todd-s.jpg" alt="todd" class="img">
+                            <div class="black">Todd E</div>
+                            <img src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="removeTodd()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                        <div class="names"  onmouseover="changeCursor(this)" id="phil">
+                            <img src="images/phil-s.jpg" alt="phil" class="img">
+                            <div  class="black">Phil K</div>
+                            <img src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="removePhil()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                    </div>
+                </div>
+                <div id="connections">
+                    <div id="connectionsHeader" class="header">
+                        <div id="fiveHun"><div id="Hund">418</div></div>
+                        <div>Your Connections</div>
+                    </div>
+                    <div id="connectionsList">
+                        <div class="names">
+                            <img src="images/adrien-s.jpg" alt="adrian" class="img">
+                            <div class="black">Adrian D</div>
+                            <img onclick="increaseConnections()" src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="decreaseConnections()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                        <div class="names">
+                            <img src="images/anne-s.jpg" alt="anne" class="img">
+                            <div class="black">Anne J</div>
+                            <img onclick="increaseConnections()" src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="decreaseConnections()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                        <div class="names">
+                            <img src="images/alayne-s.jpg" alt="alayne" class="img">
+                            <div class="black">Alayne T</div>
+                            <img onclick="increaseConnections()" src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="decreaseConnections()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                        <div class="names">
+                            <img src="images/arry-s.jpg" alt="arry" class="img">
+                            <div class="black">Arry Y</div>
+                            <img onclick="increaseConnections()" src="images/accept-circle.png" alt="ckeck" class="img">
+                            <img onclick="decreaseConnections()" src="images/close-circle.png" alt="x" class="img">
+                        </div>
+                    </div>
+                    <div id="more">
+                        <a href="#">Vew More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

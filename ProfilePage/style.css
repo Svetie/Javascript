@@ -1,0 +1,197 @@
+#container {
+    display: block;
+}
+
+#top {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(24, 15, 15);
+    margin-bottom: 20px;
+}
+
+#nav {
+    color: white;
+    background-color: rgb(24, 15, 15);
+    width: 83%;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+[href="#"] {
+    text-decoration: none;
+}
+
+ul.nav-links {
+    justify-content: flex-end;
+}
+
+.nav, .nav-title, .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+li {
+    text-align:justify;
+    color: white;
+    margin: 0px 10px;
+}
+
+
+.btn {
+    background-color: rgb(44, 202, 241);
+    color: white;
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+    box-shadow: 3px 4px black;
+    font-size: 14px;
+}
+
+#button {
+    margin-top: 18px;
+}
+
+a.visitedWhite:visited {
+    color: rgb(240, 206, 212);
+}
+
+#bottom {
+    background-color: white;
+    width: 83%;
+    height: 700px;  /*% doesn't work*/
+    margin: 0px auto;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+#left {
+    width: 60%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#idCard {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+#user {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#stripe {
+    width: 100%;
+    height: 70px;
+    background-color: lightseagreen;
+}
+
+#jane {
+    margin: 40px 0px 10px 30px;
+    margin-left: 30px;
+}
+
+#location {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#seattle {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+p {
+    margin: 0px 0px 0px 30px;
+}
+
+#edit {
+    margin-left: 30px;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+#gear {
+    height: 14px;
+    width: 14px;
+}
+
+#education {
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+    border-bottom: none;
+
+}
+
+#pEdu {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}
+
+.comic {
+    font-family: "Comic Sans MS", "Comic Sans", Arial;
+}
+
+#dojo {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#date {
+    font-size: 9px;
+}
+
+#belt {
+    font-size: 12px;
+}
+
+.hover {
+    cursor: pointer;
+}
+
