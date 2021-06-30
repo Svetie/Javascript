@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <nav>
+        <div id="nav">
+            <div id="weather">
+                <h1>DojoWeather</h1>
+            </div>
+            <div id="cities">
+                <p class="city" id="burbank" onmouseover="hover(this)" onclick="alertCity(this)">Burbank</p>
+                <p class="city" id="chicago" onmouseover="hover(this)" onclick="alertCity(this)">Chicago</p>
+                <p class="city" id="dallas" onmouseover="hover(this)" onclick="alertCity(this)">Dallas</p>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="sanJose">
+            <h2>San Jose</h2>
+            <div id=>
+                <label for="showTemp">show temperature in</label>
+                <select name="showTemp" id="showTemp" onchange="convert()">
+                    <option value="celsius">&#176 C</option>
+                    <option value="fahrenheit">&#176 F</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="days">
+            <div id="today" class="day">
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="cloud with rain">
+                <p>some rain</p>
+                <div class="degrees">
+                    <p class="redText"><span class="temp">24</span>&#176</p>
+                    <p class="blueText"><span class="temp">18</span>&#176</p>
+                </div>
+            </div>
+            <div id="tomorrow" class="day">
+                <h3>Tomorrow</h3>
+                <img src="images/some_sun.png" alt="cloud with rain">
+                <p>some sun</p>
+                <div class="degrees">
+                    <p class="redText"><span class="temp">27</span>&#176</p>
+                    <p class="blueText"><span class="temp">19</span>&#176</p>
+                </div>
+            </div>
+            <div id="friday" class="day">
+                <h3>Friday</h3>
+                <img src="images/some_clouds.png" alt="cloud with rain">
+                <p>some clouds</p>
+                <div class="degrees">
+                    <p class="redText"><span class="temp">21</span>&#176</p>
+                    <p class="blueText"><span class="temp">16</span>&#176</p>
+                </div>
+            </div>
+            <div id="saturday" class="day">
+                <h3>Saturday</h3>
+                <img src="images/some_sun.png" alt="cloud with rain">
+                <p>some sun</p>
+                <div class="degrees">
+                    <p class="redText"><span class="temp">26</span>&#176</p>
+                    <p class="blueText"><span class="temp">21</span>&#176</p>
+                </div>
+            </div>
+        </div>
+        <div id="annoying">
+            <div id="cookieImgContainer">
+                <img id="cookieImg" src="images/cookie.png" alt="cookie">
+            </div>
+            <div id="stop">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones)
+                    to personalize content and ads, to provide
+                    social media features and to analyse
+                    our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <div id="iAccept">
+                <button id="accept" onclick="accept()">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
