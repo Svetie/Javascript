@@ -12,20 +12,34 @@ function accept() {
     let element = document.getElementById('annoying');
     element.remove();
 }
+
+
 let arrVal = document.getElementsByClassName('temp');
 
 let arrCelsius = getArrCel();
-console.log(arrCelsius);
+// console.log(arrCelsius);
 let arrFahrengeit = getFahrValues();
-console.log(arrFahrengeit);
+// console.log(arrFahrengeit);
+let isCelcius = true;
 
 function convert() {
-    for (let i = 0; i, arrVal.length; i++) {
-        arrVal[i].innerText = arrFahrengeit[i];
-        console.log(arrVal[i]);
-        console.log(arrFahrengeit[i]);
-    }
+    // console.log(element.value);
+    if(isCelcius){
+        for (let i = 0; i < arrVal.length; i++) {
+            arrVal[i].innerText = arrFahrengeit[i];
+            console.log(arrVal[i]);
+            console.log(arrFahrengeit[i]);
+        }
 
+    }
+    else{
+        for (let i = 0; i < arrVal.length; i++) {
+            arrVal[i].innerText = arrCelsius[i];
+            // console.log(arrVal[i]);
+            // console.log(arrFahrengeit[i]);
+        }
+    }
+    isCelcius = !isCelcius;
     // let element = document.getElementById('showTemp').value;
     // console.log("element" + element);
     //     if(element == "fahrenheit"){
